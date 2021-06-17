@@ -1,0 +1,12 @@
+<h1>Orders</h1>
+<ul>
+  <% @orders.each do |order| %>
+    <li>Order No: <%= link_to order.order_no, order %></li>
+    <li>Client: <%= link_to order.client, order %></li>
+    <li>Address: <%= order.address %></li>
+    <li>Phone: <%= order.phone %></li>
+    <li>Project: <%= order.project %></li>
+    <li>email: <%= order.email %></li>
+    --------------------------------------------------------
+  <% end %>
+</ul>

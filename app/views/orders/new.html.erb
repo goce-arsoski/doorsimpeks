@@ -1,0 +1,38 @@
+<h1>New Order</h1>
+
+<%= form_with model: @order do |form| %>
+  <div>
+    <%= form.label :order_no %><br>
+    <%= form.text_field :order_no %>
+  </div>
+
+  <div>
+    <%= form.label :client %><br>
+    <%= form.text_field :client %>
+  </div>
+
+  <div>
+    <%= form.label :address %><br>
+    <%= form.text_field :address %>
+  </div>
+
+  <div>
+    <%= form.label :phone %><br>
+    <%= form.text_field :phone %>
+  </div>
+
+  <div>
+    <%= form.label :project %><br>
+    <%= form.text_area :project %>
+  </div>
+
+  <div>
+    <%= form.label :email %><br>
+    <%= form.text_field :email %>
+  </div>
+  <br>
+  
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
